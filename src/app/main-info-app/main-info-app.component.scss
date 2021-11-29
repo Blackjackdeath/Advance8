@@ -1,0 +1,38 @@
+.mainBox{
+  display: flex;
+  &Avatar{
+    margin: 15px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &Img{
+      width: 250px;
+      border-radius: 15px;
+      margin-left: 50px;
+    }
+  }
+  &Contact{
+    width: 300px;
+    padding-top: 25px;
+    &Name{
+      font-weight: bold;
+      font-size: 25px;
+      font-family: "Times New Roman", serif;
+      margin-bottom: 50px;
+    }
+    &P {
+      font-family: "Times New Roman", serif;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 5px;
+
+    }
+    &PI{
+      font-family: "Times New Roman", serif;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+}

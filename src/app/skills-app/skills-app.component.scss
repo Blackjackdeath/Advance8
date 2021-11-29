@@ -1,0 +1,15 @@
+.skillBox{
+  display: flex;
+  width: 500px;
+  padding: 10px;
+  &Type{
+    width: 50%;
+  }
+}
+
+h2{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}

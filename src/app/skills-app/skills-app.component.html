@@ -1,0 +1,10 @@
+<div class="skillBox">
+  <div class="skillBoxType">
+    <h2>Soft Skill</h2>
+    <app-skill-description *ngFor="let skill of softSkill" [skill]="skill"></app-skill-description>
+  </div>
+  <div class="skillBoxType">
+    <h2>Hard Skill</h2>
+    <app-skill-description *ngFor="let skill of hardSkill" [skill]="skill" ></app-skill-description>
+  </div>
+</div>
