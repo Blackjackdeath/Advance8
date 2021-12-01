@@ -1,0 +1,46 @@
+.projectBox{
+  width: 520px;
+  height: 200px;
+  box-shadow: -2px -2px 4px 2px ;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__img{
+    height: 150px;
+    width: 150px;
+  }
+  &__textarea{
+    margin-left: 20px;
+    height: 180px;
+    width: 300px;
+    resize: none;
+    border: 1px solid steelblue;
+    border-radius: 5px;
+  }
+}
+.editBox{
+  position: relative;
+  width: 40px;
+  height: 80px;
+  background-color: #c3d7ff;
+  border: none;
+  border-radius: 5px;
+  top: -50px;
+  left: 50px;
+  opacity: 0;
+  &__button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: unset;
+    margin-bottom: 5px;
+  }
+  &__img{
+    width: 30px;
+    height: 30px;
+  }
+}
+.accept{
+  display: none;
+}

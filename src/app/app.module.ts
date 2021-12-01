@@ -6,6 +6,8 @@ import { MainInfoAppComponent } from './main-info-app/main-info-app.component';
 import { SkillsAppComponent } from './skills-app/skills-app.component';
 import { ExperienceAppComponent } from './experience-app/experience-app.component';
 import { SkillDescriptionComponent } from './skills-app/skill-description/skill-description.component';
+import { ListProjectComponent } from './experience-app/list-project/list-project.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { SkillDescriptionComponent } from './skills-app/skill-description/skill-
     MainInfoAppComponent,
     SkillsAppComponent,
     ExperienceAppComponent,
-    SkillDescriptionComponent
+    SkillDescriptionComponent,
+    ListProjectComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

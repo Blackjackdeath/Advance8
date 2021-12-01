@@ -1,7 +1,7 @@
 <p class="nameSkill">{{skill.skill}}</p>
-<div [style.width]="width" [style.backgroundColor]="skill.color" class="skillDescriptionBox">
+<div [style.width]="width" [style.backgroundColor]="skill.color" class="skillDescriptionBox"  [@moveRight]="animationState">
   <button type="button"  class="skillDescriptionBoxButton" (click)="show()">{{arrow}}</button>
-  <div class="skillDescriptionBoxText" [style.display]="visible">
-    <p class="skillDescriptionBoxTextP">{{skill.description}}</p>
+  <div class="skillDescriptionBoxText" [@showBlock]="animationShow">
+    <p class="skillDescriptionBoxTextP" >{{skill.description}}</p>
   </div>
 </div>

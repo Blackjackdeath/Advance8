@@ -1,1 +1,16 @@
-<p>experience-app works!</p>
+<div class="experienceBox">
+  <h2>Experience</h2>
+  <div class="experienceBoxAdd">
+    <div class="experienceBoxAddWrapper">
+      <label for="image" class="experienceBoxAddWrapper__label">Enter url image project</label>
+      <input type="url" name="image" id="image" #image class="experienceBoxAddWrapper__input">
+    </div>
+    <div class="experienceBoxAddWrapper">
+      <label for="description" class="experienceBoxAddWrapper__label"> Description project</label>
+      <textarea id="description" class="experienceBoxAddWrapper__textarea" #textarea></textarea>
+    </div>
+    <button type="button" class="experienceBoxAdd__button" (click)="create(image.value, textarea.value)">Add project</button>
+  </div>
+  <app-list-project *ngFor="let project of projectArr; let index=index" [project]="project" [index]="index"></app-list-project>
+</div>
+
