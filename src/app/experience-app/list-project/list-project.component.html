@@ -1,5 +1,5 @@
 <div class="projectBox" [attr.value]="index" (click)="showPanel()" >
-  <img src="{{project.imageUrl}}}" class="projectBox__img">
+  <img src="{{project.imageUrl}}" class="projectBox__img">
   <textarea class="projectBox__textarea" disabled (click)="checkEdit($event)" (focus)="changeAcceptShow()">{{project.descriptionProject}}</textarea>
   <div class="editBox" [style.opacity]="showEditPanel" [style.height]="showResize">
     <button class="editBox__button delete" type="button" (click)="removeProject(index)"><img src="assets/delete-2902143.png" class="editBox__img"></button>

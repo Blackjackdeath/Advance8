@@ -21,7 +21,12 @@ export class ExperienceAppComponent implements OnInit {
   }
 
   create(url:string, text:string){
-    this.project.imageUrl=url;
+    if (url===''){
+      this.project.imageUrl='assets/no-image-icon-1.jpg'
+    }
+    else{
+      this.project.imageUrl=url;
+    }
     this.project.descriptionProject=text
     this.projectInfo.createProject(this.project);
 
